@@ -13,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "FieldSnaps | The Unified Engine",
+  title: "FieldSnaps | Your field. In a snap.",
   description: "End the app fragmentation nightmare with FieldSnaps. The omniscient AI data layer for modern construction.",
 };
 
