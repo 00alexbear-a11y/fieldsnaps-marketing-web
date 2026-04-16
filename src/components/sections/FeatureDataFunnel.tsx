@@ -1,16 +1,25 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Search, Mic, MessageSquare, Camera, ClipboardCheck, ArrowDown } from "lucide-react";
+import { Search, Mic, MessageSquare, Camera, ClipboardCheck, ArrowDown, MapPin, Receipt, ListTodo, Share2 } from "lucide-react";
 
 export default function FeatureDataFunnel() {
   const features = [
     {
+      icon: <MapPin size={40} className="text-brand-blue" />,
+      title: "Geofenced Auto-Clocker",
+      subtitle: "Bulletproof Estimating",
+      pain: "Good luck trying to get the guys to manually track their own hours at specific jobs. You estimate a project at 100 hours, it actually takes 140 hours—and without accurate data, you have no idea if you're actually making a profit or bleeding cash.",
+      fix: "FieldSnaps uses geofences to automatically allocate hours without anyone pushing a button. It knows exactly how much of the day was spent at Job A, in transit, or at Job B, so you know exactly which jobs are actually making you money.",
+      borderColor: "border-brand-blue",
+      headerBg: "bg-primary text-background"
+    },
+    {
       icon: <Search size={40} className="text-brand-blue" />,
       title: "The Owner's Brain",
       subtitle: "Find Anything Instantly",
-      pain: "You are forced to keep every project detail in your head. When a guy on site needs to know a paint color, they have to stand around waiting for you to check your notes.",
-      fix: "FieldSnaps acts as the 'Owner's Brain' safely locked on the cloud. Your crew gets instant access to the details they need to keep moving, and they never see your personal stuff.",
+      pain: "You’re the bottleneck. If a guy on site needs to know exactly which paint color the client approved 3 months ago, they stand around doing nothing until you finally dig through your texts and get back to them.",
+      fix: "FieldSnaps acts as your second brain. Crews can instantly ask the AI for any project detail, spec, or past message, unblocking them immediately without ever interrupting your day.",
       borderColor: "border-brand-blue",
       headerBg: "bg-primary text-background",
       wireframe: (
@@ -29,8 +38,8 @@ export default function FeatureDataFunnel() {
       icon: <Camera size={40} className="text-brand-blue" />,
       title: "Isolated Cloud Camera",
       subtitle: "Keep Work Off Your Phone",
-      pain: "Your phone's camera roll is stuffed with job site photos mixed with pictures of your kids. And texting those photos ruins the image quality.",
-      fix: "Take photos straight into the FieldSnaps cloud. They never save to your personal phone. You can draw on them, and share them with a simple web link—no app needed.",
+      pain: "Scroll through your phone right now. Your photos of your kid's birthday are sandwiched right next to pictures of busted drywall. And when you try to text those photos, the compression turns them into blurry garbage.",
+      fix: "Snap high-res photos inside FieldSnaps. They bypass your camera roll entirely, lock straight into the project file, and can be shared instantly via a web link without losing an ounce of quality.",
       borderColor: "border-primary",
       headerBg: "bg-white text-primary border border-outline",
       wireframe: (
@@ -50,8 +59,8 @@ export default function FeatureDataFunnel() {
       icon: <Mic size={40} className="text-brand-blue" />,
       title: "Ghost Reporter",
       subtitle: "Voice-to-Action AI",
-      pain: "Typing out daily logs on a tiny phone screen at the end of a long day is a nightmare.",
-      fix: "Just tap the mic and talk while you drive home. FieldSnaps listens, cleans up what you said, and turns it into a perfect bulleted daily log automatically.",
+      pain: "No one wants to sit in their truck at 5:30 PM pecking out a daily log on a tiny mobile keyboard. So they just don't do it, and you lose the precise historical record of what actually happened that day.",
+      fix: "Just tap the mic and talk normally while you drive home. FieldSnaps listens, strips out the truck noise, and automatically structures a perfect bulleted daily log for you.",
       borderColor: "border-primary",
       headerBg: "bg-white text-primary border border-outline",
       wireframe: (
@@ -74,8 +83,8 @@ export default function FeatureDataFunnel() {
       icon: <MessageSquare size={40} className="text-brand-blue" />,
       title: "Unified SMS Inbox",
       subtitle: "Track Customer Texts",
-      pain: "Subs won't download apps, and customers text you at all hours. Your project details get totally scattered across 40 different Apple Message threads.",
-      fix: "We give your project its own phone number. Subs and customers send normal text messages to it, and FieldSnaps tracks all their responses perfectly into your dashboard.",
+      pain: "When a sub texts your project manager's personal cell phone, your company has zero visibility. If that PM quits or gets fired, those text conversations—and the entire client history—walk right out the door with them.",
+      fix: "We give each project its own dedicated phone number. Subs text it normally, but the conversations funnel directly into your dashboard. You own the number, the history, and the relationship, regardless of who is running the job.",
       borderColor: "border-primary",
       headerBg: "bg-white text-primary border border-outline",
       wireframe: (
@@ -110,7 +119,7 @@ export default function FeatureDataFunnel() {
       {/* TOP: Feature List */}
       <div className="flex flex-col gap-12">
         {features.map((feature, i) => (
-          <div key={i} className={`flex flex-col md:flex-row gap-0 border-4 border-outline/50 relative overflow-hidden bg-white`}>
+          <div key={i} className={`flex flex-col md:flex-row gap-0 border-4 ${feature.borderColor} relative overflow-hidden bg-white`}>
             
             {/* Left Header Box */}
             <div className={`md:w-1/3 flex flex-col items-center text-center justify-center p-8 ${feature.headerBg}`}>
@@ -139,8 +148,30 @@ export default function FeatureDataFunnel() {
         ))}
       </div>
 
+      {/* RAPID-FIRE CAPABILITIES GRID */}
+      <div className="mt-12 text-center flex flex-col items-center w-full">
+         <h3 className="font-headline font-black text-3xl uppercase tracking-tighter mb-8 text-primary">And So Much <span className="text-brand-blue">More.</span></h3>
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
+            <div className="bg-white border-4 border-outline p-6 flex flex-col items-center text-center shadow-lg">
+               <Receipt size={32} className="text-brand-blue mb-4" />
+               <h4 className="font-headline font-bold text-xl uppercase tracking-tighter mb-2">Automated Receipts</h4>
+               <p className="font-medium text-primary/80">Snap a photo. AI instantly sorts it by project and routes it to your accountant via web link.</p>
+            </div>
+            <div className="bg-white border-4 border-outline p-6 flex flex-col items-center text-center shadow-lg">
+               <ListTodo size={32} className="text-brand-blue mb-4" />
+               <h4 className="font-headline font-bold text-xl uppercase tracking-tighter mb-2">AI To-Do Engine</h4>
+               <p className="font-medium text-primary/80">Tasks are automatically generated and tracked based on your voice logs and SMS threads.</p>
+            </div>
+            <div className="bg-white border-4 border-outline p-6 flex flex-col items-center text-center shadow-lg">
+               <Share2 size={32} className="text-brand-blue mb-4" />
+               <h4 className="font-headline font-bold text-xl uppercase tracking-tighter mb-2">Massive Cloud Links</h4>
+               <p className="font-medium text-primary/80">Send 50 to 1,000 photos as a single secure text link to any Android or Apple user. No app required.</p>
+            </div>
+         </div>
+      </div>
+
       {/* Connection Downward Arrow */}
-      <div className="w-full flex justify-center -mt-4 mb-4">
+      <div className="w-full flex justify-center mt-12 mb-4">
          <ArrowDown size={48} className="text-brand-blue opacity-50" />
       </div>
 

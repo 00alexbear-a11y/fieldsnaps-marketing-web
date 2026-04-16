@@ -17,6 +17,92 @@
   }
 }
 
+:root {
+  --bg-deep: #111111;
+  --bg-gradient-start: #111111;
+  --bg-gradient-end: #0a0a0a;
+  
+  --surface-glass: rgba(255, 255, 255, 0.03);
+  --surface-glass-hover: rgba(255, 255, 255, 0.07);
+  --border-glass: #2A2A2A;
+  --border-glass-highlight: rgba(255, 255, 255, 0.1);
+
+  --surface-button: #1B1B1B;
+  --surface-button-hover: #252525;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #A0A0A0;
+  --text-muted: #666666;
+  
+  --accent-primary: #3B82F6;
+  --accent-primary-text: #ffffff;
+  --accent-primary-glow: rgba(59, 130, 246, 0.15);
+  --accent-success: #16a34a;
+  --accent-success-glow: rgba(22, 163, 74, 0.2);
+  --accent-danger: #dc2626;
+  --accent-danger-glow: rgba(220, 38, 38, 0.2);
+  
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xxl: 32px;
+
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  --spring-easing: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --shadow-neon: 0 4px 12px rgba(59, 130, 246, 0.15);
+  --transition-fast: 0.15s;
+}
+
+.pd-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xxl);
+  padding: 0 0 var(--spacing-xxl) 0;
+}
+
+.pd-timeline-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.pd-timeline-date {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--border-glass);
+}
+
+.pd-timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols, 4), 1fr);
+  gap: var(--spacing-sm);
+}
+
+.pd-timeline-item {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid var(--border-glass);
+  transition: all var(--transition-fast) var(--spring-easing);
+  position: relative;
+}
+
+.pd-timeline-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s var(--spring-easing);
+}
+
 /* Custom CSS Noise Layer */
 .bg-noise {
   position: relative;

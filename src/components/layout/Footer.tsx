@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-16 md:gap-32 font-mono text-sm tracking-widest font-bold uppercase">
+        <div className="flex flex-col md:flex-row gap-16 md:gap-24 font-mono text-sm tracking-widest font-bold uppercase">
           <div className="flex flex-col gap-6">
             <div className="text-brand-blue mb-4">Platform</div>
             <Link href="#features" className="hover:text-brand-blue transition-colors text-background/60">Omniscient AI</Link>
@@ -36,8 +36,15 @@ export default function Footer() {
           <div className="flex flex-col gap-6">
             <div className="text-brand-blue mb-4">Company</div>
             <Link href="#pricing" className="hover:text-brand-blue transition-colors text-background/60">Pricing</Link>
-            <Link href="#" className="hover:text-brand-blue transition-colors text-background/60">Terms of Service</Link>
-            <Link href="#" className="hover:text-brand-blue transition-colors text-background/60">Privacy Policy</Link>
+            <Link href="mailto:hello@fieldsnaps.com" className="hover:text-brand-blue transition-colors text-background/60">Contact</Link>
+          </div>
+          <div className="flex flex-col gap-6">
+            <div className="text-brand-blue mb-4">Legal</div>
+            <Link href="/terms" className="hover:text-brand-blue transition-colors text-background/60">Terms of Service</Link>
+            <Link href="/privacy" className="hover:text-brand-blue transition-colors text-background/60">Privacy Policy</Link>
+            <Link href="/eula" className="hover:text-brand-blue transition-colors text-background/60">EULA</Link>
+            <Link href="/cookie" className="hover:text-brand-blue transition-colors text-background/60">Cookie Policy</Link>
+            <Link href="/refund" className="hover:text-brand-blue transition-colors text-background/60">Refund Policy</Link>
           </div>
         </div>
       </div>

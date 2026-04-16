@@ -3,27 +3,27 @@ export default function FoundersNote() {
     <section className="py-24 px-8 max-w-[1000px] mx-auto relative z-10">
       <div className="border-l-8 border-brand-blue pl-8 md:pl-16 relative">
         <h2 className="text-[clamp(2.5rem,5vw,4.5rem)] font-headline font-black uppercase tracking-tighter leading-none mb-8">
-          THE END OF <br/><span className="text-brand-blue">APP FATIGUE.</span>
+          THE BREAKING <br/><span className="text-brand-blue">POINT.</span>
         </h2>
         
-        <div className="space-y-8 text-xl md:text-2xl font-medium text-primary/90 leading-relaxed max-w-3xl">
+        <div className="space-y-8 text-[19px] md:text-2xl font-medium text-primary/90 leading-relaxed max-w-3xl">
           <p>
-            I built FieldSnaps because the software industry is actively punishing contractors.
+            We built FieldSnaps because the software industry is actively punishing contractors.
           </p>
           <p>
-            I hit a breaking point when I opened my phone and saw pictures of my newborn baby sitting right next to pictures of 2x4 framing. I desperately needed to separate my work from my personal life. 
+            It started with a breaking point: opening a personal phone and seeing pictures of family and friends sitting right next to pictures of 2x4 framing. Contractors desperately needed a way to cleanly separate their work from their personal lives. 
           </p>
           <p>
-            But when I looked for a solution, a software company wanted to charge me $1,200 a year just for a photo app, and forced me into a "three-user minimum" for seats I didn't even have. It felt like I was being taken for a ride just because I didn't have a massive crew.
+            But the &quot;solutions&quot; on the market were completely out of touch. Software giants wanted to charge $1,200 a year just for a basic photo app, forcing teams into &quot;three-user minimums&quot; for seats they didn&apos;t even have. It felt like tradesmen were being taken for a ride just for trying to get organized.
           </p>
           <p>
-            Worse, that $1,200 didn't even run my business. I still had to juggle 5 other separate apps just to track time, notes, and texts. The <strong className="text-brand-blue">App Fatigue</strong> was out of control. There was nothing out there that did it all.
+            Worse, that $1,200 didn&apos;t even run the business. Crews still had to juggle disjointed apps to track time, input daily logs, and handle client texts from their personal phone numbers. The <strong className="text-brand-blue">App Fatigue</strong> was entirely out of control, and there was nothing out there that did it all.
           </p>
           <p>
-            I built FieldSnaps to finally solve both problems. First, to put all your notes, photos, and messages into one central "owner's brain" on the cloud, keeping your personal phone totally clean. 
+            FieldSnaps was engineered to completely shatter both of these problems. First, to funnel all your notes, photos, and messages into one central, intelligent system on the cloud—keeping your personal phone totally clean. 
           </p>
           <p>
-            Second, to create a tool with complete respect for the guys actually doing the work. I know what it feels like to be nickeled-and-dimed, and I refuse to do that to you.
+            Second, we know exactly what it feels like to be nickeled-and-dimed by corporate tech companies, and we refuse to operate that way.
           </p>
           <p className="font-black text-2xl md:text-3xl uppercase tracking-widest text-brand-blue pb-4">
             No nonsense. No BS.<br/>No hidden fees. No user minimums.
@@ -32,7 +32,7 @@ export default function FoundersNote() {
 
         {/* Signature Box */}
         <div className="mt-12 inline-block border-2 border-primary p-6 relative">
-           <div className="absolute -top-3 left-4 bg-background px-2 font-mono text-sm font-bold tracking-widest uppercase">The Builder</div>
+           <div className="absolute -top-3 left-4 bg-background px-2 font-mono text-sm font-bold tracking-widest uppercase">The Team</div>
            <div className="font-headline font-black text-2xl uppercase tracking-widest text-primary">FIELD<span className="text-brand-blue">SNAPS</span></div>
            <div className="font-mono text-sm font-bold tracking-widest uppercase text-primary/50 mt-1">Built for the Trades</div>
         </div>

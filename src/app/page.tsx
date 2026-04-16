@@ -26,7 +26,7 @@ export default function Home() {
           </div>
           <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
               <h2 className="text-[#EBEAE6] text-[clamp(2.5rem,8vw,8rem)] font-headline font-black uppercase tracking-tighter mix-blend-overlay drop-shadow-[0_0_15px_rgba(0,0,0,0.8)]">
-                YOUR FIELD MADE SIMPLE.
+                END THE APP JUNGLE.
               </h2>
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background z-10 pointer-events-none opacity-40"></div>
