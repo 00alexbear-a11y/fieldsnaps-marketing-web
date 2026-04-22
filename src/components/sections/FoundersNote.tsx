@@ -20,7 +20,7 @@ export default function FoundersNote() {
             Worse, that $1,200 didn&apos;t even run the business. Crews still had to juggle disjointed apps to track time, input daily logs, and handle client texts from their personal phone numbers. The <strong className="text-brand-blue">App Fatigue</strong> was entirely out of control, and there was nothing out there that did it all.
           </p>
           <p>
-            FieldSnaps was engineered to completely shatter both of these problems. First, to funnel all your notes, photos, and messages into one central, intelligent system on the cloud—keeping your personal phone totally clean. 
+            FieldSnaps was built to solve both of these problems. First, it funnels all your notes, photos, and messages into one central system on the cloud, keeping your personal phone totally clean. 
           </p>
           <p>
             Second, we know exactly what it feels like to be nickeled-and-dimed by corporate tech companies, and we refuse to operate that way.

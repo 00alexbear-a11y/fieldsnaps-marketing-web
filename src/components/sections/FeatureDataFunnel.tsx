@@ -19,7 +19,7 @@ export default function FeatureDataFunnel() {
       title: "The Owner's Brain",
       subtitle: "Find Anything Instantly",
       pain: "You’re the bottleneck. If a guy on site needs to know exactly which paint color the client approved 3 months ago, they stand around doing nothing until you finally dig through your texts and get back to them.",
-      fix: "FieldSnaps acts as your second brain. Crews can instantly ask the AI for any project detail, spec, or past message, unblocking them immediately without ever interrupting your day.",
+      fix: "FieldSnaps answers questions for you. Crews can instantly pull up any project detail, spec, or past message on their own, getting them back to work without ever interrupting your day.",
       borderColor: "border-brand-blue",
       headerBg: "bg-primary text-background",
       wireframe: (
@@ -83,7 +83,7 @@ export default function FeatureDataFunnel() {
       icon: <MessageSquare size={40} className="text-brand-blue" />,
       title: "Unified SMS Inbox",
       subtitle: "Track Customer Texts",
-      pain: "When a sub texts your project manager's personal cell phone, your company has zero visibility. If that PM quits or gets fired, those text conversations—and the entire client history—walk right out the door with them.",
+      pain: "When a sub texts your project manager's personal cell phone, your company has zero visibility. If that PM quits or gets fired, all those text conversations and the entire client history walk right out the door with them.",
       fix: "We give each project its own dedicated phone number. Subs text it normally, but the conversations funnel directly into your dashboard. You own the number, the history, and the relationship, regardless of who is running the job.",
       borderColor: "border-primary",
       headerBg: "bg-white text-primary border border-outline",

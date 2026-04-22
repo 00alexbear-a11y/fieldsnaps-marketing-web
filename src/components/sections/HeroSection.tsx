@@ -168,7 +168,7 @@ export default function HeroSection() {
         </h1>
         
         <div className="text-lg md:text-xl font-medium max-w-xl text-primary/80 mb-12 leading-relaxed">
-          Imagine an AI assistant that knows the context of every single detail on your job site—available to your entire team 24/7. Now stop imagining. It&apos;s here. 
+          Imagine an AI assistant that knows every detail of your job site, available to your entire team 24/7. Now stop imagining. It&apos;s here. 
           <br/><br/>
           FieldSnaps is a completely new category of software built to let you instantly <strong className="text-primary font-black bg-brand-blue/10 px-1">offload your brain.</strong> Just dump your thoughts, voice notes, and photos into the app, and the AI automatically organizes it into one unified system:
           <ul className="mt-6 space-y-3 text-[16px] md:text-[18px] font-bold text-primary">
